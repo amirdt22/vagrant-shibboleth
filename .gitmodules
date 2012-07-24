@@ -1,0 +1,3 @@
+[submodule "amirdt22-tomcat"]
+	path = amirdt22-tomcat
+	url = git@github.com:amirdt22/puppet-tomcat.git
