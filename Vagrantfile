@@ -11,7 +11,6 @@ Vagrant::Config.run do |config|
       puppet.manifest_file  = "site.pp"
       puppet.module_path    = "puppet/modules"
     end
-    idp_config.vm.forward_port 8443, 8443
     idp_config.vm.share_folder "templatedir", "/var/lib/puppet/templates",      "puppet/templates"
     idp_config.vm.share_folder "moduledir",   "/etc/puppet/modules",            "puppet/modules"
     idp_config.vm.share_folder "manifestdir", "/etc/puppet/manifests",          "puppet/manifests"
@@ -28,7 +27,6 @@ Vagrant::Config.run do |config|
       puppet.manifests_path = "puppet/manifests"
       puppet.module_path    = "puppet/modules"
     end
-    sp.vm.forward_port 6443, 6443
     sp.vm.share_folder "templatedir", "/var/lib/puppet/templates",  "puppet/templates"
     sp.vm.share_folder "moduledir",   "/etc/puppet/modules",        "puppet/modules"
     sp.vm.share_folder "manifestdir", "/etc/puppet/manifests",      "puppet/manifests"
