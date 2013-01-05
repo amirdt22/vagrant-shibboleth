@@ -1,7 +1,7 @@
-node idp.training.shib {
-
+node 'idp.training.shib' {
+  notify {'not implemented':}
 }
 
-node sp.training.shib {
-
+node 'sp.training.shib' {
+  notify {'not implemented':}
 }
